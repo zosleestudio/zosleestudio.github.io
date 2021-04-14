@@ -1,0 +1,154 @@
+div#page h1 {
+    margin-top: 17.4vw;
+    font-size: 5.8vw;
+    text-align: center;
+    color: #000000;
+}
+div#page .map { 
+    text-align: center; 
+    margin: 14.4vw 15vw 3.563vw 14.375vw; 
+    position: relative;
+    background-color: white;
+}
+div#page .map img {width: 100%; height: 64vw ;box-shadow: 0.625vw 0.625vw 1.563vw #c9c9c9;}
+div#page .map .hovering {
+    position: absolute; 
+    top: 0; bottom: 0; 
+    opacity: 0;
+    transition: 0.2s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+div#page .map .hovering p {
+    margin: 0 9.375vw 0 9.375vw;
+    font-size: 9px;
+    letter-spacing: normal;
+    color: #414141;
+}
+div#page .map:hover { cursor: pointer;}
+div#page .map:hover .hovering { visibility: visible; opacity: 1;}
+div .info { margin: 9.5vw 14.375vw 0 14.375vw;}
+div .info h2 {
+    margin: 0;
+    font-size: 4.688vw;
+    text-align: left;
+    color: #000000;
+}
+div .info p {
+    margin: 1.563vw 0 0 0;
+    font-size: 3.438vw;
+    text-align: left;
+    color: #000000;
+}
+div .info p span {
+    font-size: 3.438vw;
+    text-align: left;
+    color: #7f7f7f;
+}
+div .info p span.detail { margin-left: 9.375vw;}
+div .info p span.detailPhone { margin-left: 1.7vw;}
+
+/*footer*/
+div.logos { margin: 12.5vw 0 12.5vw 0; padding: 0; text-align: center;}
+div.logos .sns_logo { display: inline; vertical-align: middle;}
+div.logos .sns_logo#middle { margin: 0 10.844vw 0 11.406vw;}
+div.logos .sns_logo img { width: 5.938vw;}
+div.logos .foot_logo { padding-top: 3.125vw; text-align: center;}
+div.logos p { margin: 0;}
+div.logos .foot_logo img { width: 42.375vw;}
+
+
+/* @media all and (min-width: 768px) and (max-width: 1279px) {
+    div#page h1 { font-size: 4.688vw; margin: 1.042vw 0 10.547vw;}
+    div#page .map { margin: 8.464vw 0 5.078vw 0;}
+    div#page .map img { width: 81.510vw; height: 50.781vw;}
+    div#text { float: left;}
+    div#page .map .hovering p { font-size: 2.344vw;}
+    div .info { margin: 1.302vw 0 0 0;}
+    div .info h2 { font-size: 2.344vw;}
+    div .info p { font-size: 1.953vw;}
+    div .info p span { font-size: 1.953vw;}
+    div .info p span.detail { margin-left: 2.604vw;}
+    div.logos { margin-top: 20.182vw; float: right;}
+    div.logos .sns_logo#middle { margin: 0 7.813vw 0 7.813vw;}
+    div.logos .sns_logo img { width: 2.630vw;}
+    div.logos .foot_logo img { width: 27.214vw;}
+} */
+
+@media all and (min-width: 600px) and (max-width: 779px) {
+    div#page h1 { font-size: 3.516vw; margin: 0 0 5.5vw;}
+    div#page .map { margin: 0 6vw 0 6vw; float: left;}
+    div#page .map img { width: 46.875vw; height: 29.531vw;}
+    div#text { float: left;}
+    div#page .map .hovering p { font-size: 2.344vw;}
+    div .info { margin: 0.781vw 0 1.875vw 0;}
+    div .info h2 { font-size: 1.563vw;}
+    div .info p { font-size: 0.938vw;}
+    div .info p span { font-size: 0.938vw;}
+    div .info p span.detail { margin-left: 2.604vw;}
+    div.logos { margin-top: 1.016vw; float: left;}
+    div.logos .sns_logo#middle { margin: 0 2.656vw 0 2.656vw;}
+    div.logos .sns_logo img { width: 1.289vw;}
+    div.logos .foot_logo { padding-top: 1.250vw;}
+    div.logos .foot_logo img { width: 11.641vw;}
+}
+/* ----------- Laptop ----------- */
+@media all and (min-width: 780px) and (max-width: 1027px) {
+    div#page h1 { font-size: 3.516vw; margin: 0 0 5.4vw;}
+    div#page .map { margin: 0 12vw 0 6vw; float: left;}
+    div#page .map img { width: 46.875vw; height: 29.531vw;}
+    div#text { float: left;}
+    div#page .map .hovering p { font-size: 2.344vw;}
+    div .info { margin: 0.781vw 0 1.875vw 0;}
+    div .info h2 { font-size: 1.563vw;}
+    div .info p { font-size: 0.938vw;}
+    div .info p span { font-size: 0.938vw;}
+    div .info p span.detail { margin-left: 2.604vw;}
+    div.logos { margin-top: 1.016vw; float: left;}
+    div.logos .sns_logo#middle { margin: 0 2.656vw 0 2.656vw;}
+    div.logos .sns_logo img { width: 1.289vw;}
+    div.logos .foot_logo { padding-top: 1.250vw;}
+    div.logos .foot_logo img { width: 11.641vw;}
+}
+
+/* ----------- Desktop ----------- */
+@media all and (min-width: 1028px) and (max-width: 1440px){
+    div#page h1 { font-size: 2.604vw; margin: 0 0 5vw;}
+    div#page .map { margin: 0 9.896vw 0 10vw; float: left;}
+    div#page .map img { width: 50.052vw; height: 33.646vw;}
+    div#text { float: left; margin-right: 10.052vw;}
+    div#page .map .hovering p { font-size: 2.344vw;}
+    div .info { margin: 0.781vw 0 1.875vw 0;}
+    div .info h2 { font-size: 1.406vw;}
+    div .info p { font-size: 0.938vw;}
+    div .info p span { font-size: 0.938vw;}
+    div .info p span.detail { margin-left: 2.604vw;}
+    div.logos { margin-top: 2.604vw; float: left;}
+    div.logos .sns_logo#middle { margin: 0 3.385vw 0 3.385vw}
+    div.logos .sns_logo img { width: 1.615vw;}
+    div.logos .foot_logo { padding-top: 2.344vw;}
+    div.logos .foot_logo img { width: 14.844vw;}
+}
+
+@media all and (min-width: 1441px) {
+    div#page h1 { font-size: 38px; margin: 0 0 72px;}
+    div#page .map { margin: 0 143px 0 144px; float: left;}
+    div#page .map img { width: 721px; height: 485px;}
+    div#text { float: left; margin-right: 145px;}
+    div#page .map .hovering p { font-size: 34px;}
+    div .info { margin: 11px 0 27px 0;}
+    div .info h2 { font-size: 20px;}
+    div .info p { font-size: 14px; margin: 30px 0 0 0;}
+    div .info p span { font-size: 14px;}
+    div .info p span.detail { margin-left: 38px;}
+    div .info p span.detailPhone { margin-left: 23px;}
+    div.logos { margin-top: 38px; float: left;}
+    div.logos .sns_logo#middle { margin: 0 49px 0 49px}
+    div.logos .sns_logo img { width: 23px;}
+    div.logos .foot_logo { padding-top: 34px;}
+    div.logos .foot_logo img { width: 214px;}
+}

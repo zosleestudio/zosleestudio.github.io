@@ -1,0 +1,251 @@
+.pageLoad {
+    position: fixed;
+    z-index: 99;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35.7vh;
+    text-align: center;
+}
+.pageLoad img { height: 100%; margin-bottom: 5.3vw;}
+.pageLoad.hidden {
+    animation: fadeOut 1s;
+    transition: top 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+    100% {
+        opacity: 0; visibility: hidden;
+    }
+}
+#blank { margin-top: 35.7vh; text-align: center;}
+#loader {text-align: center; margin: 0 0 0 0;}
+#loader div { height: 24.375vw;}
+#loader #logo img { animation: fadeEffect 1.6s; height: 100%;}
+#loader #value img { animation: fadeEffect 3s; height: 100%; margin-top: 8vw;}
+#cont { visibility: hidden;}
+#cont.show { animation: fadeEffect 3s; visibility: visible;}
+
+/* ex/in button */
+div.clear { clear: both;}
+section.tabs { background: rgba(255, 0, 0, 0);}
+section.tabs ul {
+    height: 39.6vw;
+    padding: 0; margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+section.tabs ul li {
+    margin-top: 14.5vw;
+    display:inline-block;
+    cursor: pointer;
+    font-size: 7vw;
+    text-align: left;
+    color: #b5b5b6;
+}
+section.tabs ul li#tab1 { margin-right: 20.313vw;}
+section.tabs ul li.selected {
+    text-decoration: underline; 
+    text-decoration-thickness: 1.5vw;
+    color: #000000;
+}
+/* project lists */
+section.tabs article {
+	display: none; /* hidden by default */
+    text-align: center;
+    animation: fadeEffect 1.6s; /* Fading effect takes 1 second */
+}
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+/* selected tab content styles */
+section.tabs article.selected { display: block;}
+section.tabs article .proj {
+    height: 40.2vw;
+    margin-bottom: 7.8vw;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+section.tabs article .proj img { object-fit: cover;}
+section.tabs article .proj .content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: .2s ease;
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+}
+section.tabs article .proj .content h2 {
+    padding-top: 15.625vw;
+    /* width: 100vw; */
+    margin: 0;
+    font-size: 7.500vw;
+    text-align: center;
+    color: #000000;
+}
+section.tabs article .proj .content p {
+    /* padding: 5px 50px 0px 50px; */
+    /* width: 100vw; */
+    margin: 0;
+    font-size: 3.750vw;
+    text-align: center;
+    color: #333333;
+    visibility: hidden;
+}
+section.tabs article .proj:hover { cursor: pointer;}
+/* box on hover */
+section.tabs article .proj:hover .content { visibility: visible; opacity: 1;}
+/* partner logos */
+#partners { padding: 0; margin: 0 12vw; content: ""; clear: both;}
+.column { float: left; width: 50%; margin: 5vw 0vw; justify-content: center;}
+.column div { margin: 0 5vw 5vw 0;}
+.column div img#aka { width: 12vw;}
+.column div img#airpremia { width: 28vw; margin-top: .7vw;}
+.column div img#kaist { width: 16vw;}
+.column div img#mataba {width: 20vw; margin-top: 2vw;}
+
+/* 
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+
+    section.tabs ul {height: 10.156vw;}
+    section.tabs ul li { margin: 0 0 0 0; font-size: 4.688vw;}
+    section.tabs ul li#tab1 { margin-right: 15.977vw;}
+    section.tabs ul li.selected { text-decoration-thickness: .65vw;}
+
+    section.tabs article { margin: 0;}
+    section.tabs article .proj { margin-bottom: 5.078vw; height: 15.365vw;}
+    section.tabs article .proj .content {width: 100%;}
+    section.tabs article .proj .content h2 { padding-top: 4.5vw ; font-size: 2.344vw;}
+    section.tabs article .proj .content p { 
+        visibility: visible; 
+        font-size: 1.1vw; 
+        text-align: center;
+        margin: 1vw 10vw 0 10vw;
+    }
+    section.tabs article div.partners { margin-top: 18.880vw;}
+    section.tabs article .partners div { padding: 0; margin: 0;}
+    section.tabs article .partners div.p_logo img { padding-right: 8.854vw; height: 2.891vw;}
+    section.tabs article .partners div.p_logo img#airpremia { height: 1.823vw;}
+    section.tabs article .partners div.p_logo img#mataba { height: 1.823vw; padding: 0; margin: 0;}
+} */
+
+/* ----------- Laptop ----------- */
+@media all and (min-width: 600px) and (max-width: 1027px) {
+    #blank { margin-top: 40vh;}
+    #loader div { height: 10vw; margin: 0 20vw 0 20vw;}
+    #logo.move { animation: moveSmooth 1.6s; animation-fill-mode: forwards;}
+    @keyframes moveSmooth {
+        from { height: 10vw; margin: 0 20vw 0 20vw;}
+        to { height: 6.563vw; margin: 0 0 0 0;}
+    }
+    #logo{ float: left; text-align: left;}
+    #loader #value img { margin: 0;}
+    /* ex/in button */
+    section.tabs ul {height: 10.156vw;}
+    section.tabs ul li { margin: 0 0 0 0; font-size: 3.516vw;}
+    section.tabs ul li#tab1 { margin: 0 20.313vw 0 0;}
+    section.tabs ul li.selected { text-decoration-thickness: .65vw;}
+    /* project lists */
+    section.tabs article { margin: 0;}
+    section.tabs article .proj { margin-bottom: 3.359vw; height: 16.484vw;}
+    section.tabs article .proj .content {width: 100%;}
+    section.tabs article .proj .content h2 { padding-top: 4.5vw ; font-size: 1.953vw;}
+    section.tabs article .proj .content p { 
+        visibility: visible; 
+        font-size: 1vw; 
+        text-align: center;
+        margin: 1.4vw 10vw 0 10vw;
+    }
+
+    #partners { padding: 0; margin: 10vw 0; content: ""; clear: both;}
+    .column { float: left; width: 50%; margin: 0 0 0 0; justify-content: center;}
+    .column div { float: left; margin: 0 16% 0 16%;}
+    .column div.p_logo1 { margin: 0 12% 0 12%;}
+    .column div img#aka { width: 5vw;}
+    .column div img#kaist { width: 8vw;}
+    .column div img#airpremia { width: 12vw; margin-top: .5vw;}
+    .column div img#mataba {width: 9vw; margin-top: .3vw;}
+
+}
+/* ----------- Desktop ----------- */
+@media all and (min-width: 1028px) and (max-width: 1440px){
+    #logo img { height: 5.625vw;}
+    #blank { margin-top: 45vh;}
+    #loader div { height: 7vw; margin: 0 31vw 0 31vw;}
+    #value { position: fixed; left: 430px;}
+    #logo.move { animation: moveSmooth 1.6s; animation-fill-mode: forwards;}
+    @keyframes moveSmooth {
+        from { height: 7vw; margin: 0 31vw 0 31vw;}
+        to { height: 5.625vw;  margin: 0 10vw 0 10vw;}
+    }
+    #logo{ float: left; text-align: left;}
+    #loader #value img { margin: 0;}
+    /* ex/in button */
+    section.tabs ul {height: 8.438vw;}
+    section.tabs ul li { margin: 0 0 0 0; font-size: 2.604vw;}
+    section.tabs ul li#tab1 { margin: 0 13.406vw 0 0;}
+    section.tabs ul li.selected { text-decoration-thickness: .4vw;}
+    /* project lists */
+    section.tabs article { margin: 0;}
+    section.tabs article .proj { margin-bottom: 5.625vw; height: 16.875vw;}
+    section.tabs article .proj .content {width: 100vw;}
+    section.tabs article .proj .content h2 { padding-top: 4.5vw ; font-size: 2vw;}
+    section.tabs article .proj .content p { 
+        visibility: visible; 
+        font-size: 0.938vw; 
+        text-align: center;
+        margin: 1vw 10vw 0 10vw;
+    }
+    #partners { padding: 0; margin: 10vw 5vw; content: ""; clear: both;}
+    .column { float: left; width: 50%; margin: 0 0 0 0; justify-content: center;}
+    .column div { float: left; margin: 0 16% 0 16%;}
+    .column div.p_logo1 { margin: 0 12% 0 12%;}
+    .column div img#aka { width: 5vw;}
+    .column div img#kaist { width: 8vw;}
+    .column div img#airpremia { width: 12vw; margin-top: .5vw;}
+    .column div img#mataba {width: 9vw; margin-top: .3vw;}
+}
+
+@media all and (min-width: 1441px) {
+    #logo img { height: 81px;}
+    #blank { margin-top: 44vh;}
+    #loader div { height: 122px; margin: 0 375px 0 375px;}
+    #logo.move { animation: moveSmooth 1.6s; animation-fill-mode: forwards;}
+    @keyframes moveSmooth {
+        from { height: 144px; margin: 0 288px 0 288px;}
+        to { height: 81px;  margin: 0 144px 0 144px;}
+    }
+    #logo{ float: left; text-align: left;}
+    #loader #value img { margin: 0;}
+    /* ex/in button */
+    section.tabs ul {height: 122px;}
+    section.tabs ul li { margin: 0 0 0 0; font-size: 38px;}
+    section.tabs ul li#tab1 { margin: 0 193px 0 0;}
+    section.tabs ul li.selected { text-decoration-thickness: 6px;}
+    /* project lists */
+    section.tabs article { margin: 0;}
+    section.tabs article .proj { margin-bottom: 81px; height: 243px;}
+    section.tabs article .proj .content {width: 1441px;}
+    section.tabs article .proj .content h2 { padding-top: 65px ; font-size: 29px;}
+    section.tabs article .proj .content p { 
+        visibility: visible; 
+        font-size: 14px; 
+        text-align: center;
+        margin: 14px 144px 0 144px;
+    }
+    #partners { padding: 0; margin: 144px 72px; content: ""; clear: both;}
+    .column { float: left; width: 50%; margin: 0 0 0 0; justify-content: center;}
+    .column div { float: left; margin: 0 16% 0 16%;}
+    .column div.p_logo1 { margin: 0 12% 0 12%;}
+    .column div img#aka { width: 72px;}
+    .column div img#kaist { width: 115px;}
+    .column div img#airpremia { width: 173px; margin-top: 7px;}
+    .column div img#mataba {width: 130px; margin-top: 4px;}
+}

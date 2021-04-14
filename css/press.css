@@ -1,0 +1,108 @@
+div h1 {
+    font-size: 5.8vw;
+    text-align: center;
+    color: #000000;
+    margin-top: 19.5vw;
+}
+/* press lists */
+article { 
+    display: block; 
+    text-align: center; 
+    animation: fadeEffect 1.6s; /* Fading effect takes 1 second */
+    margin-top: 12.5vw;
+}
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+article .news {
+    position: relative;
+    width: 71.563vw; height: 56.25vw;
+    margin: 0 14.375vw 7.8vw 14vw;
+}
+article .news img { object-fit: cover; width: 71.563vw; height: 56.25vw;}
+article .news .content {
+    position: absolute;
+    top: 0; bottom: 0;
+    opacity: 0;
+    transition: 0.2s ease;
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+}
+article .news .content .text p {
+    /* margin: 105px 0 0 6px; */
+    margin: 0;
+    position: absolute;
+    bottom: 5.313vw; left: 5.313vw;
+    font-size: 3.125vw;
+    text-align: left;
+    color: #727272;
+}
+article .news .content .text p strong {
+    /* margin: 5.5px 0 0 6px; */
+    margin-top: 1.719vw;
+    font-size: 4.688vw;
+    text-align: left;
+    color: #000000;
+}
+article .news:hover {cursor: pointer;}
+/* box on hover */
+article .news:hover .content {visibility: visible; opacity: 1;}
+
+/* 
+@media all and (min-width: 768px) and (max-width: 1279px) {
+    div h1 { font-size: 4.668vw; margin-top: 1.172vw;}
+    article { margin-top: 10.378vw;}
+    article .news { 
+        width: 36.458vw; height: 25.651vw; 
+        display: inline-block; 
+        margin: 0 0 4.323vw 0;} 
+    article .news img { width: 36.458vw; height: 25.651vw} 
+    article .right { margin-left: 8.307vw;}
+    article .news .content .text p { font-size: 1.302vw; bottom: 2.083vw; left: 2.083vw;}
+    article .news .content .text p strong { font-size: 15px;}
+} */
+
+/* ----------- Laptop ----------- */
+@media all and (min-width: 600px) and (max-width: 1027px) {
+    div h1 { font-size: 3.516vw; margin-top: 0.703vw; font-weight: 500;}
+    article { margin-top: 4.5vw;}
+    article .news { 
+        width: 35.313vw; height: 26.484vw; 
+        display: inline-block; 
+        margin: 0 0 3.5vw 0;} 
+    article .news img { width: 35.313vw; height: 26.484vw;}
+    article .right { margin-left: 5.3vw;}
+    article .news .content .text p { font-size: 0.938vw; bottom: 2.422vw; left: 2.422vw;}
+    article .news .content .text p strong { margin-top: 0.781vw; font-size: 1.953vw;}
+}
+/* ----------- Desktop ----------- */
+@media all and (min-width: 1028px) and (max-width: 1440px){
+    div h1 { font-size: 2.604vw; margin-top: 0;}
+    article { margin-top: 4.8vw;}
+    article .news { 
+        width: 35vw; 
+        height: 25.417vw; 
+        display: inline-block; 
+        margin: 0 0 5.6vw 0;} 
+    article .news img { width: 35vw; height: 25.417vw; }
+    article .right { margin-left: 9.5vw;}
+    article .news .content .text p { font-size: 0.938vw; bottom: 2.5vw; left: 2.5vw;}
+    article .news .content .text p strong { font-size: 1.406vw;}
+}
+
+@media all and (min-width: 1441px) {
+    div h1 { font-size: 38px; margin-top: 0;}
+    article { margin-top: 69px;}
+    article .news { 
+        width: 504px; 
+        height: 366px; 
+        display: inline-block; 
+        margin: 0 0 81px 0;} 
+    article .news img { width: 504px; height: 366px; }
+    article .right { margin-left: 137px;}
+    article .news .content .text p { font-size: 14px; bottom: 36px; left: 36px;}
+    article .news .content .text p strong { font-size: 20px;}
+}

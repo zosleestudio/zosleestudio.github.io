@@ -1,0 +1,102 @@
+* { box-sizing: border-box;}
+h1 { font-size: 5.8vw; text-align: center; color: #000000; margin: 0;}
+h2 { margin: 0 0 3.125vw 0; font-size: 4.688vw;}
+p { margin: 0; font-size: 3.438vw; color: #727272;}
+div.zos { margin: 18.25vw 0 0 0;}
+div.zos div#zosimage { 
+    margin: 13.25vw 14.375vw 0 14.375vw;
+    object-fit: contain;
+    text-align: center;
+}
+div.zos div#zosimage img { border: 7px solid #3d2d38; width: 100%;}
+div.zos div#zosimage p {
+    text-align: right;
+    font-family: Futura;
+    font-size: 1vw;
+    font-style: italic;
+    color: #7f7f7f;
+}
+div.zos div { margin: 0 14.375vw 0 14.375vw;}
+div.zos div div { margin: 10vw 0 16.25vw 0;}
+div#description img { width: 100%;}
+div.zos div#zosleetext #people { margin: 0 0 0 0;}
+div.zos div#zosleetext #people ul { 
+    padding: 0; margin: 0 auto;
+    list-style: none;
+    display: inline-block;
+    justify-content: center;
+}
+div.zos div#zosleetext #people ul li { 
+    float: left;
+    margin: 0 4.688vw 8.125vw 4.688vw; 
+    width: 26.250vw; 
+    height: 39.063vw;
+}
+div.zos div#zosleetext #people ul li img { width: 24.375vw;}
+div.zos div#zosleetext #people ul li p { font-size: 1.5vw; margin-top: 0.781vw; text-align: center;}
+
+/* ----------- Laptop ----------- */
+@media only screen and (min-width: 600px) and (max-width: 1027px) {
+    h1 { font-size: 3.516vw;}
+    h2 { margin-bottom: 0.781vw; font-size: 1.406vw;}
+    p { font-size: 0.938vw; margin-bottom: 0.781vw;}
+    div.zos { margin: 0 0 0 0;}
+    div.zos div#zosimage { float: right; margin: 9vw 0 0 0;}
+    div.zos div#zosimage p { font-size: 0.5vw;}
+    div.zos div#zostext { float: left; margin: 10vw 0 0 0;}
+    div.zos div#zosleetext { float:right; margin: 8vw 0 0 0;}
+    div.zos div#zostext div { margin-right: 3vw;}
+    div.zos div div { margin: 0 0 11.5vw 0;}
+    div.zos div#zosleetext #people ul li { 
+        width: 13.4vw; 
+        height: 15.625vw; 
+        text-align: center; 
+        margin: 3.750vw 4.313vw 2.344vw 4.313vw;}
+    div.zos div#zosleetext #people ul li img { width: 10.156vw;}
+    div.zos div#zosleetext #people ul li p { font-size: 8px; margin-top: 0.781vw;}
+}
+
+/* ----------- Desktop ----------- */
+@media all and (min-width: 1028px) and (max-width: 1440px){
+    h1 { font-size: 2.604vw;}
+    h2 { margin-bottom: 0.781vw; font-size: 1.406vw;}
+    p { font-size: 0.938vw; margin-bottom: 0.781vw;}
+    div.zos { margin: 0 0 0 0;}
+    div.zos div#zosimage { float: right; margin: 9vw 10vw 0 0;}
+    div.zos div#zosimage img { width: 25vw;}
+    div.zos div#zosimage p { font-size: 0.938vw;}
+    div.zos div#zostext { float: left; margin: 10vw 10vw 0 10vw;}
+    div.zos div#zosleetext { float:right; margin: 8vw 10vw 0 10vw;}
+    div.zos div#zostext div { margin-right: 3vw;}
+    div.zos div div { margin: 0 0 6.25vw 0;}
+    div.zos div#zosleetext #people ul { margin: 0 2vw 0 2.5vw;}
+    div.zos div#zosleetext #people ul li { 
+        width: 10vw; 
+        height: 15.625vw; 
+        text-align: center; 
+        margin: 3.750vw 2.5vw 2.344vw 2.5vw;}
+    div.zos div#zosleetext #people ul li img { width: 8.5vw;}
+    div.zos div#zosleetext #people ul li p { font-size: 8px; margin-top: 0.781vw;}
+
+}
+@media all and (min-width: 1441px) {
+    h1 { font-size: 38px;}
+    h2 { margin-bottom: 11px; font-size: 20px;}
+    p { font-size: 14px; margin-bottom: 11px;}
+    div.zos { margin: 0 0 0 0;}
+    div.zos div#zosimage { float: right; margin: 130px 144px 0 0;}
+    div.zos div#zosimage img { width: 360px;}
+    div.zos div#zosimage p { font-size: 14px;}
+    div.zos div#zostext { float: left; margin: 144px 144px 0 144px;}
+    div.zos div#zosleetext { float:right; margin: 115px 144px 0 144px;}
+    div.zos div#zostext div { margin-right: 43px;}
+    div.zos div div { margin: 0 0 90px 0;}
+    div.zos div#zosleetext #people ul { margin: 0 29px 0 36px;}
+    div.zos div#zosleetext #people ul li { 
+        width: 144px; 
+        height: 225px; 
+        text-align: center; 
+        margin: 54px 36px 34px 36px;}
+    div.zos div#zosleetext #people ul li img { width: 122px;}
+    div.zos div#zosleetext #people ul li p { font-size: 8px; margin-top: 11px;}
+}

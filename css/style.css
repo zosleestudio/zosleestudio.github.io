@@ -1,0 +1,208 @@
+@font-face {
+    font-family: "Heebo";
+    src: url("../fonts/Heebo-VariableFont_wght.ttf") format("opentype");
+}
+@font-face {
+    font-family: "Futura";
+    src: url("../fonts/Futura.ttc");
+}
+* { box-sizing: border-box;}
+li, h1, h2, strong, a { font-family: Futura; text-decoration: none; object-fit: contain;}
+h1, h2 { font-weight: 500;}
+p, span { font-family: Heebo; text-decoration: none; object-fit: contain;}
+
+
+body {
+    padding: 0; margin: 8.125vw 0 8.125vw 0;
+    background: url('../img/background/background_320.png') repeat-y;
+    background-attachment: fixed;
+    background-color:white;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.clear:after { content:""; display: block; clear: both;}
+li { list-style-type: none; }
+
+/* header & menu */
+/* logo */
+/* header h1.logo{ height: 24.375vw; text-align: center; margin: 0 0 0 0;}
+header h1.logo img {height: 100%;} */
+
+header h1#logo{ height: 24.375vw; text-align: center; margin: 0 0 0 0;}
+header h1#logo img {height: 100%;}
+
+/* menus */
+header .navigation {height: 16.250vw; padding: 0; margin: 0; text-align: center;}
+header .navigation li { display: inline-block; margin-top: 10.469vw;}
+header .navigation li a {
+    font-size: 4.688vw;
+    color: rgb(0, 0, 0);
+}
+header .navigation li a#press {margin: 0 9.375vw 0 10.562vw;}
+header .navigation li.current a { border-bottom: 3.2px solid black; color: #000000;}
+
+/* footer */
+footer { padding: 16.250vw 14.375vw 0 14.375vw;}
+footer .info { float: left; width: 100%; margin-bottom: 1.6vw;}
+footer .info p { 
+    margin: 3.125vw 0 0 0; 
+    padding-left: 15.6vw; 
+    text-indent: -14vw;
+    font-size: 2.813vw;
+    text-align: left;
+    color: #666666;
+}
+footer .info p span.detail { padding-left: 10vw; color: #999999;}
+footer .info p span.detailNew { padding-left: 8.3vw; color: #999999;}
+footer .logos { margin-top: 45.313vw; text-align: center;}
+footer .logos .sns_logo { display: inline; vertical-align: middle;}
+footer .logos .sns_logo#middle { margin: 0 10.844vw 0 11.406vw;}
+footer .logos .sns_logo img { width: 5.938vw;}
+footer .logos .foot_logo { padding-top: 5.813vw; text-align: center;}
+footer .logos p { margin: 0;}
+footer .logos .foot_logo img { width: 42.375vw;}
+
+/* 
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    body { 
+        padding: 0; margin: 5.078vw 9.115vw 5.078vw 9.115vw;
+        background: url('../img/background_768.png') repeat-y;
+        background-color:white;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+
+    header h1.logo{ float: left;  text-align: left; margin: 0 0 0 0; height: 10.156vw;}
+    header h1.logo img { height: 9.115vw; margin-top: 0.586vw;}
+
+    header .navigation { float: right; height: 12.370vw; text-align: right; padding: 0; margin: 3.407vw 0 0 0;}
+    header .navigation li { display:inline-block; margin: 0;}
+    header .navigation li a { font-size: 2.344vw;}
+    header .navigation li a#press { margin: 0 11.719vw 0 12.370vw;}
+
+
+    footer { margin-top: 10.156vw; padding: 0;}
+    footer .info { padding-top: 1.6vw; float: left; width:75%;}
+    footer .info p { margin: 0; padding: 0; font-size: 1.302vw; text-indent: 0;}
+    footer .info p span.detail { padding-left: 1.042vw;}
+    footer .info p span.detailNew { padding-left: 0.651vw;}
+    footer .logos { margin: 0; float: right;}
+    footer .logos .sns_logo#middle { margin: 0 3.633vw 0 3.633vw;}
+    footer .logos .sns_logo img { width: 1.732vw; vertical-align: middle;}
+    footer .logos .foot_logo {padding-top: 2.279vw}
+    footer .logos .foot_logo img { width: 18.021vw;}
+} */
+
+/* ----------- Laptop ----------- */
+@media all and (min-width: 600px) and (max-width: 1027px) {
+    /* .loader {
+        background: url('../img/background/background_1280.png') repeat-y;
+        background-size: cover;
+    } */
+    body { 
+        padding: 0; margin: 3.281vw 5.859vw 3.281vw 5.859vw;
+        background: url('../img/background/background_1280.png') repeat-y;
+        background-color:white;
+        background-attachment: fixed;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+    /* logo */
+    header h1#logo{ float: left; text-align: left; margin: 0 0 0 0; height: 9.844vw;}
+    header h1#logo img { height: 6.563vw;}
+    /* menus */
+    header .navigation { float: right; height: 14.453vw; text-align: right; padding: 0; margin: 1.953vw 0 0 0;}
+    header .navigation li { display:inline-block; margin: 0;}
+    header .navigation li a { font-size: 1.953vw;}
+    header .navigation li a#press { margin: 0 7.031vw 0 7.031vw;}
+
+    /*footer*/
+    footer { margin-top: 8.516vw; padding: 0;}
+    footer .info { padding-top: 1.6vw; float: left; width:75%;}
+    footer .info p { margin: 0; padding: 0; font-size: 1.302vw; text-indent: 0;}
+    footer .info p span.detail { padding-left: 2.734vw;}
+    footer .info p span.detailNew { padding-left: 2.344vw;}
+    footer .logos { margin: 0; float: right;}
+    footer .logos .sns_logo#middle { margin: 0 3.633vw 0 3.633vw;}
+    footer .logos .sns_logo img { width: 1.732vw; vertical-align: middle;}
+    footer .logos .foot_logo {padding-top: 2.279vw}
+    footer .logos .foot_logo img { width: 15.578vw;}
+    }
+/* ----------- Desktop ----------- */
+@media all and (min-width: 1028px) and (max-width: 1440px) {
+    /* .loader {
+        background: url('../img/background/background_1920.png') repeat-y;
+        background-size: cover;
+    } */
+    body { 
+        padding: 0; margin: 2.813vw 0 2.813vw 0;
+        background: url('../img/background/background_1920.png') repeat-y;
+        background-color:white;
+        background-attachment: fixed;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+    /* logo */
+    header { margin: 0 10vw 0 10vw;}
+    header h1#logo{ float: left; text-align: left; margin: 0 0 0 0; height: 9.844vw;}
+    header h1#logo img { height: 5.625vw;}
+    /* menus */
+    header .navigation { 
+        float: right; 
+        height: 9.375vw; 
+        text-align: right; 
+        padding: 0; margin: 1.953vw 0 0 0;}
+    header .navigation li { display:inline-block; margin: 0;}
+    header .navigation li a { font-size: 1.563vw;}
+    header .navigation li a#press { margin: 0 8.333vw 0 8.333vw;}
+    
+    /*footer*/
+    footer { padding: 0; margin: 11vw 10vw 0 10vw;}
+    footer .info { padding-top: 1.6vw; float: left; width: 75%;}
+    footer .info p { margin: 0; padding: 0; font-size: 0.781vw; text-indent: 0;}
+    footer .info p span.detail { padding-left: 2.734vw;}
+    footer .info p span.detailNew { padding-left: 2.344vw;}
+    footer .logos { margin: 0; float: right;}
+    footer .logos .sns_logo#middle { margin: 0 2.633vw 0 2.633vw;}
+    footer .logos .sns_logo img { width: 1.732vw; vertical-align: middle;}
+    footer .logos .foot_logo {padding-top: 2.279vw}
+    footer .logos .foot_logo img { width: 12vw;}
+}
+@media all and (min-width: 1441px) {
+    body { 
+        padding: 0; margin: 0;
+        background: url('../img/background/background_1920.png');
+        background-attachment: fixed;
+        background-size: 1441px;
+        background-repeat: repeat;
+    }
+    .page {
+        padding: 0; margin: 41px auto;
+        justify-content: center; width: 1441px;
+    }
+    /* logo */
+    header { margin: 0 144px 0 144px;}
+    header h1#logo{ float: left; text-align: left; margin: 0 0 0 0; height: 142px;}
+    header h1#logo img { height: 81px;}
+    /* menus */
+    header .navigation { 
+        float: right; 
+        height: 135px; 
+        text-align: right; 
+        padding: 0; margin: 28px 0 0 0;}
+    header .navigation li { display:inline-block; margin: 0;}
+    header .navigation li a { font-size: 23px;}
+    header .navigation li a#press { margin: 0 120px 0 120px;}
+    
+    /*footer*/
+    footer { padding: 0; margin: 159px 144px 0 144px;}
+    footer .info { padding-top: 23px; float: left; width: 75%;}
+    footer .info p { margin: 0; padding: 0; font-size: 11px; text-indent: 0;}
+    footer .info p span.detail { padding-left: 39px;}
+    footer .info p span.detailNew { padding-left: 34px;}
+    footer .logos { margin: 0; float: right;}
+    footer .logos .sns_logo#middle { margin: 0 38px 0 38px;}
+    footer .logos .sns_logo img { width: 25px; vertical-align: middle;}
+    footer .logos .foot_logo {padding-top: 33px}
+    footer .logos .foot_logo img { width: 173px;}
+}
