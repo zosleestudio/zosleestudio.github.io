@@ -160,17 +160,17 @@ section.tabs article .proj:hover .content { visibility: visible; opacity: 1;}
 /* ----------- Laptop ----------- */
 @media all and (min-width: 600px) and (max-width: 1027px) {
     #blank { margin-top: 40vh;}
-    #loader div { height: 10vw; margin: 0 20vw 0 20vw;}
-    #logo.move { animation: moveSmooth 1.6s; animation-fill-mode: forwards;}
+    #loader div { height: 10vw;}
+    #logo.move { animation: moveSmooth 1.6s; animation-fill-mode: forwards; border: none;}
     @keyframes moveSmooth {
-        from { height: 10vw; margin: 0 20vw 0 20vw;}
-        to { height: 6.563vw; margin: 0 0 0 0;}
+        from { height: 10vw; padding: 0 13.9vw 0 20vw;}
+        to { height: 6.563vw; margin: 0 0 0 0; padding: 0;}
     }
-    #logo{ float: left; text-align: left;}
+    #logo{ float: left; text-align: left; padding: 0 13.9vw 0 20vw; border-right: 3px solid black;}
     #loader #value img { margin: 0;}
-    #loader #value { margin: 0; left: 60%;}
-    .animate { margin-top: 30vw; width: 6vw; bottom: 3vw; left: 27%;}
-    #loader #copyright { margin-top: 15vw; bottom: 3.5vw; left: 15.7%;}
+    #loader #value { margin: 0; left: 64%;}
+    .animate { margin-top: 30vw; width: 6vw; bottom: 3vw; left: 44%;}
+    #loader #copyright { margin-top: 15vw; bottom: 3.5vw; left: 32.5%;}
     #loader #copyright img { height: 1.5vw;}
 
     /* ex/in button */
@@ -204,18 +204,23 @@ section.tabs article .proj:hover .content { visibility: visible; opacity: 1;}
 @media all and (min-width: 1028px) and (max-width: 1440px){
     #logo img { height: 5.625vw;}
     #blank { margin-top: 45vh;}
-    #loader div { height: 7vw; margin: 0 31vw 0 31vw;}
-    #value { position: fixed; left: 430px;}
-    #logo.move { animation: moveSmooth 1.6s; animation-fill-mode: forwards;}
-    @keyframes moveSmooth {
-        from { height: 7vw; margin: 0 31vw 0 31vw;}
-        to { height: 5.625vw;  margin: 0 10vw 0 10vw;}
+    #loader div { height: 7vw;}
+    #value { position: fixed; left: 60.3%;}
+    #logo { 
+        border-right: 3px solid black; 
+        padding-left: 100px; 
+        float: left; text-align: left;
+        padding: 0 11.9vw 0 31vw;
     }
-    #logo{ float: left; text-align: left;}
+    #logo.move { animation: moveSmooth 1.6s; animation-fill-mode: forwards; border: none;}
+    @keyframes moveSmooth {
+        from { height: 7vw; padding: 0 11.9vw 0 31vw;}
+        to { height: 5.625vw; margin: 0 10vw 0 10vw; padding: 0;}
+    }
     #loader #value img { margin: 0;}
-    #loader #value { margin: 0; left: 60%;}
-    .animate { margin-top: 30vw; bottom: 1vw; left: 17%; width: 3.5vw;}
-    #loader #copyright { margin-top: 15vw; bottom: 2vw; left: 9%;}
+    #loader #value { margin: 0; left: 60.3%;}
+    .animate { margin-top: 30vw; bottom: 1vw; left: 48.3%; width: 3.5vw;}
+    #loader #copyright { margin-top: 15vw; bottom: 2vw; left: 40.4%;}
     #loader #copyright img { height: 1vw;}
 
     /* ex/in button */
@@ -247,20 +252,25 @@ section.tabs article .proj:hover .content { visibility: visible; opacity: 1;}
 @media all and (min-width: 1441px) {
     #logo img { height: 81px;}
     #blank { margin-top: 45vh;}
-    #loader div { height: 101px; margin: 0 446px 0 446px;}
-    #value { position: fixed; left: 430px;}
-    #logo.move { animation: moveSmooth 1.6s; animation-fill-mode: forwards;}
-    @keyframes moveSmooth {
-        from { height: 101px; margin: 0 446px 0 446px;}
-        to { height: 81px;  margin: 0 144px 0 144px;}
+    #loader div { height: 101px;}
+    #value { position: fixed; left: 60.3%;}
+    #logo { 
+        border-right: 3px solid black; 
+        padding-left: 100px; 
+        float: left; text-align: left;
+        padding: 0 171px 0 446px;
     }
-    #logo{ float: left; text-align: left;}
+    #logo.move { animation: moveSmooth 1.6s; animation-fill-mode: forwards; border: none;}
+    @keyframes moveSmooth {
+        from { height: 101px; padding: 0 171px 0 446px;}
+        to { height: 81px; margin: 0 144px 0 144px; padding: 0;}
+    }
     #loader #value img { margin: 0;}
-    #loader #value { margin: 0; left: 60%;}
+    #loader #value { margin: 0; left: 60.3%;}
     .animate { position: relative; margin: 0 0 0 0; top: 320px; bottom: 0; left: 16.7%; width: 50px;}
     #loader #copyright { position: relative; margin-top: 216px; bottom: 40px; left: 0;}
     #loader #copyright img { height: 14px;}
-    
+
     /* ex/in button */
     section.tabs ul {height: 122px;}
     section.tabs ul li { margin: 0 0 0 0; font-size: 38px;}
