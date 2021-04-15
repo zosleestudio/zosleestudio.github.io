@@ -11,6 +11,7 @@ li, h1, h2, strong, a { font-family: Futura; text-decoration: none; object-fit: 
 h1, h2 { font-weight: 500;}
 p, span { font-family: Heebo; text-decoration: none; object-fit: contain;}
 
+#notfound { text-align: center;}
 
 body {
     padding: 0; margin: 8.125vw 0 8.125vw 0;
