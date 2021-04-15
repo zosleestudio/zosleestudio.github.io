@@ -214,8 +214,8 @@ section.tabs article .proj:hover .content { visibility: visible; opacity: 1;}
     #logo{ float: left; text-align: left;}
     #loader #value img { margin: 0;}
     #loader #value { margin: 0; left: 60%;}
-    .animate { margin-top: 30vw; bottom: 1vw; left: 17.3%; width: 3.5vw;}
-    #loader #copyright { margin-top: 15vw; bottom: 2vw; left: 9.5%;}
+    .animate { margin-top: 30vw; bottom: 1vw; left: 17%; width: 3.5vw;}
+    #loader #copyright { margin-top: 15vw; bottom: 2vw; left: 9%;}
     #loader #copyright img { height: 1vw;}
 
     /* ex/in button */
