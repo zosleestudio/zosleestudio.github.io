@@ -68,7 +68,7 @@ if($(window).width() <= 599) {
         // $("#value").slideUp("slow", function() { $(this).remove();});
         $("#value").fadeOut();
         $("#copyright").fadeOut();
-        $("#swipe").fadeOut();
+        $(".animate").fadeOut();
         $("#blank").slideUp( 1200, function() { $(this).remove();});
         $("#cont").addClass("show");
     });
@@ -78,7 +78,7 @@ if($(window).width() <= 599) {
         // $("#value").slideUp("fast", function() { $(this).remove();});
         $("#value").fadeOut();
         $("#copyright").fadeOut();
-        $("#swipe").fadeOut();
+        $(".animate").fadeOut();
         $("#blank").slideUp( 1200, function() { $(this).remove();});
         $("#cont").addClass("show");
     });
@@ -94,7 +94,7 @@ if($(window).width() <= 599) {
         // $("#value").slideUp("fast", function() { $(this).remove();});
         $("#value").fadeOut();
         $("#copyright").fadeOut();
-        $("#swipe").fadeOut();
+        $(".animate").fadeOut();
         $("#blank").slideUp( 1200, function() { $(this).remove();});
         $("#cont").addClass("show");
     });
