@@ -120,6 +120,7 @@ section.tabs article .proj .content p {
     font-size: 3.750vw;
     text-align: center;
     color: #333333;
+    visibility: hidden;
 }
 section.tabs article .proj:hover { cursor: pointer;}
 /* box on hover */
