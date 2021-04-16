@@ -1,5 +1,6 @@
-
-$(window).resize(function(e){
+setInterval(myFunction, 1000);
+function myFunction()  {
+$(window).ready(function(e){
     if($(window).width() <= 599) {
         // console.log($(window).width());
         //zosface
@@ -31,3 +32,4 @@ $(window).resize(function(e){
         });                       
     }         
 });
+}
