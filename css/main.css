@@ -48,6 +48,7 @@
 #cont { visibility: hidden;}
 #cont.show { animation: fadeEffect 3s; visibility: visible;}
 
+
 /* ex/in button */
 div.clear { clear: both;}
 section.tabs { background: rgba(255, 0, 0, 0);}
@@ -99,7 +100,8 @@ section.tabs article .proj .content {
     bottom: 0;
     opacity: 0;
     transition: .2s ease;
-    visibility: hidden;
+    /* visibility: collapse; */
+    display: none;
     background-color: rgba(255, 255, 255, 0.3);
     width: 100%;
 }
@@ -118,11 +120,13 @@ section.tabs article .proj .content p {
     font-size: 3.750vw;
     text-align: center;
     color: #333333;
-    visibility: hidden;
 }
 section.tabs article .proj:hover { cursor: pointer;}
 /* box on hover */
-section.tabs article .proj:hover .content { visibility: visible; opacity: 1;}
+section.tabs article .proj:hover .content { 
+    visibility: visible; opacity: 1;
+    display: block;
+}
 /* partner logos */
 #partners { padding: 0; margin: 0 12vw; content: ""; clear: both;}
 .column { float: left; width: 50%; margin: 5vw 0vw; justify-content: center;}
@@ -163,14 +167,14 @@ section.tabs article .proj:hover .content { visibility: visible; opacity: 1;}
     #loader div { height: 10vw;}
     #logo.move { animation: moveSmooth 1.6s; animation-fill-mode: forwards; border: none;}
     @keyframes moveSmooth {
-        from { height: 10vw; padding: 0 13.9vw 0 20vw;}
+        from { height: 10vw; padding: 0 13.3vw 0 20vw;}
         to { height: 6.563vw; margin: 0 0 0 0; padding: 0;}
     }
-    #logo{ float: left; text-align: left; padding: 0 13.9vw 0 20vw; border-right: 3px solid black;}
+    #logo{ float: left; text-align: left; padding: 0 13.3vw 0 20vw; border-right: 3px solid black;}
     #loader #value img { margin: 0;}
     #loader #value { margin: 0; left: 64%;}
-    .animate { margin-top: 30vw; width: 6vw; bottom: 3vw; left: 44%;}
-    #loader #copyright { margin-top: 15vw; bottom: 3.5vw; left: 32.5%;}
+    .animate { margin-top: 30vw; width: 6vw; bottom: 3vw; left: 47%;}
+    #loader #copyright { margin-top: 15vw; bottom: 3.5vw; left: 35.5%;}
     #loader #copyright img { height: 1.5vw;}
 
     /* ex/in button */
@@ -205,20 +209,19 @@ section.tabs article .proj:hover .content { visibility: visible; opacity: 1;}
     #logo img { height: 5.625vw;}
     #blank { margin-top: 45vh;}
     #loader div { height: 7vw;}
-    #value { position: fixed; left: 60.3%;}
     #logo { 
         border-right: 3px solid black; 
         padding-left: 100px; 
         float: left; text-align: left;
-        padding: 0 11.9vw 0 31vw;
+        padding: 0 11.4vw 0 31vw;
     }
     #logo.move { animation: moveSmooth 1.6s; animation-fill-mode: forwards; border: none;}
     @keyframes moveSmooth {
-        from { height: 7vw; padding: 0 11.9vw 0 31vw;}
+        from { height: 7vw; padding: 0 11.4vw 0 31vw;}
         to { height: 5.625vw; margin: 0 10vw 0 10vw; padding: 0;}
     }
+    #loader #value { margin: 0 0 0 0; left: 60.5vw;}
     #loader #value img { margin: 0;}
-    #loader #value { margin: 0; left: 60.3%;}
     .animate { margin-top: 30vw; bottom: 1vw; left: 48.3%; width: 3.5vw;}
     #loader #copyright { margin-top: 15vw; bottom: 2vw; left: 40.4%;}
     #loader #copyright img { height: 1vw;}
@@ -250,7 +253,7 @@ section.tabs article .proj:hover .content { visibility: visible; opacity: 1;}
 }
 
 @media all and (min-width: 1441px) {
-    #logo img { height: 81px;}
+    /* #logo img { height: 81px;}
     #blank { margin-top: 45vh;}
     #loader div { height: 101px;}
     #value { position: fixed; left: 60.3%;}
@@ -267,8 +270,27 @@ section.tabs article .proj:hover .content { visibility: visible; opacity: 1;}
     }
     #loader #value img { margin: 0;}
     #loader #value { margin: 0; left: 60.3%;}
-    .animate { position: relative; margin: 0 0 0 0; top: 320px; bottom: 0; left: 16.7%; width: 50px;}
-    #loader #copyright { position: relative; margin-top: 216px; bottom: 40px; left: 0;}
+    .animate { margin: 0; bottom: 30px; left: 49%; width: 50px;}
+    #loader #copyright { margin-top: 216px; bottom: 40px; left: 45%;}
+    #loader #copyright img { height: 14px;} */
+    #logo img { height: 81px;}
+    #blank { margin-top: 45vh;}
+    #loader div { height: 101px;}
+    #logo { 
+        border-right: 3px solid black; 
+        padding-left: 100px; 
+        float: left; text-align: left;
+        padding: 0 171px 0 446px;
+    }
+    #logo.move { animation: moveSmooth 1.6s; animation-fill-mode: forwards; border: none;}
+    @keyframes moveSmooth {
+        from { height: 101px; padding: 0 171px 0 446px;}
+        to { height: 81px; margin: 0 144px 0 144px; padding: 0;}
+    }
+    #loader #value { position: relative; margin: 0 0 0 171px; left: 0; float: left;}
+    #loader #value img { margin: 0;}
+    .animate { position: relative; width: 50px; left: 0; margin: 0 0 0 693px; padding-top: 400px;}
+    #loader #copyright { position: relative; bottom: 13px; left: 0; margin-top: 35px;}
     #loader #copyright img { height: 14px;}
 
     /* ex/in button */
