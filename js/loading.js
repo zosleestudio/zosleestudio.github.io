@@ -62,42 +62,44 @@
 //     $("#blank").slideUp( 1200, function() { $(this).remove();});
 //     $("#cont").addClass("show");
 // });
-
-if($(window).width() <= 599) {
-    window.addEventListener("scroll", function changeElement() {
-        // $("#value").slideUp("slow", function() { $(this).remove();});
-        $("#value").fadeOut();
-        $("#copyright").fadeOut();
-        $(".animate").fadeOut();
-        $("#blank").slideUp( 1200, function() { $(this).remove();});
-        $("#cont").addClass("show");
-    });
-} else if($(window).width() > 599 && $(window).width() <= 1027) {
-    window.addEventListener("scroll", function () {
-        $("#logo").addClass("move");
-        // $("#value").slideUp("fast", function() { $(this).remove();});
-        $("#value").fadeOut();
-        $("#copyright").fadeOut();
-        $(".animate").fadeOut();
-        $("#blank").slideUp( 1200, function() { $(this).remove();});
-        $("#cont").addClass("show");
-    });
-} else if ($(window).width() > 1028) {
-    // window.addEventListener("scroll", function () {
-    //     $("#logo").addClass("move");
-    //     $("#value").slideUp("slow", function() { $(this).remove();});
-    //     $("#blank").slideUp( 1200, function() { $(this).remove();});
-    //     $("#cont").addClass("show");
-    // });
-    window.addEventListener("scroll", function () {
-        $("#logo").addClass("move");
-        // $("#value").slideUp("fast", function() { $(this).remove();});
-        $("#value").fadeOut();
-        $("#copyright").fadeOut();
-        $(".animate").fadeOut();
-        $("#blank").slideUp( 1200, function() { $(this).remove();});
-        $("#cont").addClass("show");
-    });
+setInterval(myFunction, 1000);
+function myFunction() {
+    if($(window).width() <= 599) {
+        window.addEventListener("scroll", function changeElement() {
+            // $("#value").slideUp("slow", function() { $(this).remove();});
+            $("#value").fadeOut();
+            $("#copyright").fadeOut();
+            $(".animate").fadeOut();
+            $("#blank").slideUp( 1200, function() { $(this).remove();});
+            $("#cont").addClass("show");
+        });
+    } else if($(window).width() > 599 && $(window).width() <= 1027) {
+        window.addEventListener("scroll", function () {
+            $("#logo").addClass("move");
+            // $("#value").slideUp("fast", function() { $(this).remove();});
+            $("#value").fadeOut();
+            $("#copyright").fadeOut();
+            $(".animate").fadeOut();
+            $("#blank").slideUp( 1200, function() { $(this).remove();});
+            $("#cont").addClass("show");
+        });
+    } else if ($(window).width() > 1028) {
+        // window.addEventListener("scroll", function () {
+        //     $("#logo").addClass("move");
+        //     $("#value").slideUp("slow", function() { $(this).remove();});
+        //     $("#blank").slideUp( 1200, function() { $(this).remove();});
+        //     $("#cont").addClass("show");
+        // });
+        window.addEventListener("scroll", function () {
+            $("#logo").addClass("move");
+            // $("#value").slideUp("fast", function() { $(this).remove();});
+            $("#value").fadeOut();
+            $("#copyright").fadeOut();
+            $(".animate").fadeOut();
+            $("#blank").slideUp( 1200, function() { $(this).remove();});
+            $("#cont").addClass("show");
+        });
+    }
 }
 
 

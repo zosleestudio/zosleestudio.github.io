@@ -1,5 +1,5 @@
 //contact map
-$(window).resize(function(e){
+$(window).ready(function(e){
     if($(window).width() <= 599) {
         // console.log($(window).width());
         //loading
