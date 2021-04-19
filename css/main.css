@@ -234,7 +234,7 @@ section.tabs article .proj:hover .content {
     section.tabs ul li.selected { text-decoration-thickness: .4vw;}
     /* project lists */
     section.tabs article { margin: 0;}
-    section.tabs article .proj { margin-bottom: 5.625vw; height: 16.875vw;}
+    section.tabs article .proj { margin-bottom: 5.2vw; height: 16.875vw;}
     section.tabs article .proj .content {width: 100vw;}
     section.tabs article .proj .content h2 { padding-top: 4.5vw ; font-size: 2vw;}
     section.tabs article .proj .content p { 
