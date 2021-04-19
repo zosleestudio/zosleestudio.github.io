@@ -136,7 +136,7 @@ footer .logos .foot_logo img { width: 42.375vw;}
         background-size: cover;
     } */
     body { 
-        padding: 0; margin: 2.813vw 0 2.813vw 0;
+        padding: 0; margin: 2.55vw 0 4vw 0;
         background: url('../img/background/background_1920.png') repeat-y;
         background-color:white;
         background-attachment: fixed;
@@ -178,7 +178,7 @@ footer .logos .foot_logo img { width: 42.375vw;}
         background-repeat: repeat;
     }
     .page {
-        padding: 0; margin: 41px auto;
+        padding: 0; margin: 40px auto;
         justify-content: center; width: 1441px;
     }
     /* logo */

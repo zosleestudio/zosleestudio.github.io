@@ -98,8 +98,9 @@
 // });
 // });
 
-
-    window.addEventListener("scroll", function () {
+$(document).ready(function() {
+    if(!localStorage.getItem("firstTime")) {
+        window.addEventListener("scroll", function () {
             $("#logo").addClass("move");
             // $("#value").slideUp("fast", function() { $(this).remove();});
             $("#value").fadeOut();
@@ -107,7 +108,20 @@
             $(".animate").fadeOut();
             $("#blank").slideUp( 1200, function() { $(this).remove();});
             $("#cont").addClass("show");
+            localStorage.setItem("firstTime", "true");
+        });
+    } else {
+        $("#blank").hide();
+        $("#logo").addClass("move");
+        $("#value").hide();
+        $(".animate").hide();
+        $("#copyright").hide();
+        $("#cont").addClass("show");
+
+    }
 });
+
+
 
 // var prevScroll = window.pageYOffset;
 // window.onScroll = function() {
