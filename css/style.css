@@ -29,6 +29,29 @@ li { list-style-type: none; }
 /* header h1.logo{ height: 24.375vw; text-align: center; margin: 0 0 0 0;}
 header h1.logo img {height: 100%;} */
 
+.page { padding-top: 8vw;}
+#lang {
+    padding: 0 14.5vw 0 71vw;
+    position: relative; height: 7.9vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Futura;
+    color: #666666;
+    font-size: 1vw;
+    padding: 0; margin: 0;
+    padding: 0 2vw;
+}
+button:hover { color: #000000;}
+#en { border-right: 2px solid #666666;}
+
+
 header h1#logo{ height: 24.375vw; text-align: center; margin: 0 0 0 0;}
 header h1#logo img {height: 100%;}
 
@@ -117,6 +140,10 @@ footer .logos .foot_logo img { width: 42.375vw;}
     header .navigation li a { font-size: 1.953vw;}
     header .navigation li a#press { margin: 0 7.031vw 0 7.031vw;}
 
+    .page { padding-top: 0vw;}
+    #lang { padding: 0 0 0 82.5vw; height: 3.5vw; }
+    button { font-size: 8px; padding: 0 1vw;}
+
     /*footer*/
     footer { margin-top: 8.516vw; padding: 0;}
     footer .info { padding-top: 1.6vw; float: left; width:75%;}
@@ -156,6 +183,10 @@ footer .logos .foot_logo img { width: 42.375vw;}
     header .navigation li { display:inline-block; margin: 0;}
     header .navigation li a { font-size: 1.563vw;}
     header .navigation li a#press { margin: 0 8.333vw 0 8.333vw;}
+
+    .page { padding-top: 0vw;}
+    #lang { padding: 0 7.6vw 0 82.5vw; height: 3.5vw; }
+    button { font-size: 10px; padding: 0 1vw;}
     
     /*footer*/
     footer { padding: 0; margin: 11vw 10vw 0 10vw;}
@@ -181,6 +212,8 @@ footer .logos .foot_logo img { width: 42.375vw;}
         padding: 0; margin: 40px auto;
         justify-content: center; width: 1441px;
     }
+    #lang { padding: 62px 109px 0 1188px; height: 50px; }
+    button { font-size: 10px; padding: 0 14px;}
     /* logo */
     header { margin: 0 144px 0 144px;}
     header h1#logo{ float: left; text-align: left; margin: 0 0 0 0; height: 142px;}

@@ -45,6 +45,10 @@
 
 #loader #copyright { margin-top: 15vw; position: absolute; bottom: 5vw; left: 21.3%;}
 #loader #copyright img { animation: fadeEffect 1.6s; height: 3vw;}
+
+#lang { visibility: hidden;}
+#lang.show { animation: fadeEffect 1.6s; visibility: visible;}
+
 #cont { visibility: hidden;}
 #cont.show { animation: fadeEffect 3s; visibility: visible;}
 
@@ -93,7 +97,12 @@ section.tabs article .proj {
     width: 100%;
     overflow: hidden;
 }
-section.tabs article .proj img { object-fit: cover;}
+section.tabs article .proj img { 
+    width: 100%;
+    position: absolute;
+    top: 40%; left: 50%;
+    transform: translate(-50%, -40%);
+}
 section.tabs article .proj .content {
     position: absolute;
     top: 0;
@@ -177,6 +186,7 @@ section.tabs article .proj:hover .content {
     .animate { margin-top: 30vw; width: 6vw; bottom: 3vw; left: 47%;}
     #loader #copyright { margin-top: 15vw; bottom: 3.5vw; left: 35.5%;}
     #loader #copyright img { height: 1.5vw;}
+
 
     /* ex/in button */
     section.tabs ul {height: 10.156vw;}
