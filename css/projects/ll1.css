@@ -1,0 +1,60 @@
+body {
+    background-color: white;
+    background-image: none;
+}
+#content {
+    text-align: center;
+    margin: 15vw 7vw;
+}
+#content img {
+    width: 100%;
+}
+
+#content h1 {
+    font-size: 5vw;
+}
+#content p {
+    font-size: 2.5vw;
+    color: #666666;
+}
+/* ----------- Laptop ----------- */
+@media all and (min-width: 600px) and (max-width: 1027px) {
+    #content {
+        margin: 0vw 1vw;
+    }
+    #content h1 {
+        font-size: 2vw;
+    }
+    .spec { margin: 3vw 5vw;}
+    .text { margin: 3vw 5vw;}
+    #content p {
+        font-size: 0.9vw;
+    }
+}
+/* ----------- Desktop ----------- */
+@media all and (min-width: 1028px) and (max-width: 1440px) {
+    #content {
+        margin: 1vw 9vw;
+    }
+    #content h1 {
+        font-size: 2vw;
+    }
+    .spec { margin: 4vw 10vw;}
+    .text { margin: 4vw 10vw;}
+    #content p {
+        font-size: 0.9vw;
+    }
+}
+@media all and (min-width: 1441px) {
+    #content {
+        margin: 14px 130px;
+    }
+    #content h1 {
+        font-size: 29px;
+    }
+    .spec { margin: 58px 144px;}
+    .text { margin: 58px 144px;}
+    #content p {
+        font-size: 13px;
+    }
+}

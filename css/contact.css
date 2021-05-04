@@ -50,7 +50,7 @@ div .info p span {
     color: #7f7f7f;
 }
 div .info p span.detail { margin-left: 9.375vw;}
-div .info p span.detailPhone { margin-left: 1.7vw;}
+div .info p span.detailPhone { margin-left: 6vw;}
 
 /*footer*/
 div.logos { margin: 12.5vw 0 12.5vw 0; padding: 0; text-align: center;}
@@ -90,6 +90,7 @@ div.logos .foot_logo img { width: 42.375vw;}
     div .info p { font-size: 0.938vw;}
     div .info p span { font-size: 0.938vw;}
     div .info p span.detail { margin-left: 2.604vw;}
+    div .info p span.detailPhone { margin-left: 1.3vw;}
     div.logos { margin-top: 1.016vw; float: left;}
     div.logos .sns_logo#middle { margin: 0 2.656vw 0 2.656vw;}
     div.logos .sns_logo img { width: 1.289vw;}
@@ -108,6 +109,7 @@ div.logos .foot_logo img { width: 42.375vw;}
     div .info p { font-size: 0.938vw;}
     div .info p span { font-size: 0.938vw;}
     div .info p span.detail { margin-left: 2.604vw;}
+    div .info p span.detailPhone { margin-left: 1.3vw;}
     div.logos { margin-top: 1.016vw; float: left;}
     div.logos .sns_logo#middle { margin: 0 2.656vw 0 2.656vw;}
     div.logos .sns_logo img { width: 1.289vw;}
@@ -127,6 +129,7 @@ div.logos .foot_logo img { width: 42.375vw;}
     div .info p { font-size: 0.938vw;}
     div .info p span { font-size: 0.938vw;}
     div .info p span.detail { margin-left: 2.604vw;}
+    div .info p span.detailPhone { margin-left: 1.6vw;}
     div.logos { margin-top: 2.604vw; float: left;}
     div.logos .sns_logo#middle { margin: 0 3.385vw 0 3.385vw}
     div.logos .sns_logo img { width: 1.615vw;}

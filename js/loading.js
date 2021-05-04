@@ -108,6 +108,7 @@ $(document).ready(function() {
             $(".animate").fadeOut();
             $("#blank").slideUp( 1200, function() { $(this).remove();});
             $("#cont").addClass("show");
+            $("#lang").addClass("show");
             localStorage.setItem("firstTime", "true");
         });
     } else {
@@ -117,6 +118,7 @@ $(document).ready(function() {
         $(".animate").hide();
         $("#copyright").hide();
         $("#cont").addClass("show");
+        $("#lang").addClass("show");
 
     }
 });
